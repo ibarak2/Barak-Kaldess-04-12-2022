@@ -1,17 +1,6 @@
-//TODO currentWeather to null
 const initialState = {
   favoritesIds: [],
-  currentWeather: {
-    cityName: 'Tel Aviv',
-    id: '215854',
-    forecasts: [
-      { time: 1670389200000, description: 'Mostly cloudy', cTemperature: 21.1 },
-      { time: 1670475600000, description: 'Mostly sunny', cTemperature: 21.1 },
-      { time: 1670562000000, description: 'Mostly sunny', cTemperature: 21.1 },
-      { time: 1670648400000, description: 'Sunny', cTemperature: 22 },
-      { time: 1670734800000, description: 'Sunny', cTemperature: 23.2 }
-    ]
-  },
+  currentWeather: null,
   isLoading: false
 }
 
