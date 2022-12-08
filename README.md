@@ -14,7 +14,6 @@ You can watch this live demo here: url-link
 
 You can fork this repository, then:
 
-<br/>
 -npm install
 <br/>
 -npm start
