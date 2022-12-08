@@ -17,3 +17,9 @@ You can fork this repository, then:
 -npm install
 <br/>
 -npm start
+
+
+![desktop 1](https://res.cloudinary.com/ibarak/image/upload/v1670516598/finished%20projects%20previews/weather%20app/svijk1qhcwq6arlieiro.jpg)
+![desktop 2](https://res.cloudinary.com/ibarak/image/upload/v1670516598/finished%20projects%20previews/weather%20app/wmncgglyrxrtm8is2de7.jpg)
+![mobile 1](https://res.cloudinary.com/ibarak/image/upload/v1670516598/finished%20projects%20previews/weather%20app/kbjxcmdlkycbh1c86lur.jpg)
+![mobile 2](https://res.cloudinary.com/ibarak/image/upload/v1670516598/finished%20projects%20previews/weather%20app/czohnfda7k3tu0tsyz7b.jpg)
