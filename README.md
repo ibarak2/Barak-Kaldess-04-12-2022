@@ -8,7 +8,7 @@ some of the techs used: React.js, React Redux, React Router, SCSS, React Toastif
 
 ## Deployment
 
-You can watch this live demo here: url-link
+You can watch this live demo here: https://weather-app-s1ej.onrender.com/
 
 ~or
 
