@@ -7,4 +7,16 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  .title {
+    position: relative;
+    text-align: center;
+    transform: translateY(85px);
+    height: 0;
+  }
+  .no-favorites {
+    position: relative;
+    height: 0;
+    text-align: center;
+    transform: translateY(170px);
+  }
 }

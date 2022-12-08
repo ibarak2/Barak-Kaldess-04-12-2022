@@ -3,6 +3,7 @@ import axios from "axios"
 export const weatherService = {
     getAutocomplete,
     getForecasts,
+    getFavoritesForecasts
 }
 
 
@@ -13,8 +14,25 @@ const BASE_URL = "http://dataservice.accuweather.com/"
 const AUTOCOMPLETE_API_URL = `${BASE_URL}locations/v1/cities/autocomplete?apikey=${API_KEY1}&q=`
 const FUTURE_FORECASTS_API_URL = `${BASE_URL}forecasts/v1/daily/5day/`
 const FUTURE_FORECASTS_API_SETTINGS = `?apikey=${API_KEY1}&metric=true`
+const SINGLE_FORECAST_API_URL = `${BASE_URL}currentconditions/v1/`
+const SINGLE_FORECAST_API_SETTINGS = `?apikey=${API_KEY1}`
 
+async function getFavoritesForecasts(favoritesIdsArray) {
+    if (!favoritesIdsArray.length) return null
+    const favoritesData = []
+    for (let i = 0; i < favoritesIdsArray.length; i++) {
+        const result = await axios.get(SINGLE_FORECAST_API_URL + favoritesIdsArray[i].id + SINGLE_FORECAST_API_SETTINGS)
+        const newForecast = {
+            id: favoritesIdsArray[i].id,
+            cityName: favoritesIdsArray[i].cityName,
+            cTemperature: result.data[0].Temperature.Metric.Value,
+            description: result.data[0].WeatherText
+        }
+        favoritesData.push(newForecast)
+    }
 
+    return favoritesData
+}
 
 async function getForecasts(cityId, cityName) {
     const result = await axios.get(FUTURE_FORECASTS_API_URL + cityId + FUTURE_FORECASTS_API_SETTINGS)
@@ -76,3 +94,9 @@ const currentWeather = {
         { time: 1670734800000, description: 'Sunny', cTemperature: 23.2 }
     ]
 }
+
+//TODO REMOVE
+const favoritesData = [
+    { id: '215854', cityName: 'Tel Aviv', cTemperature: 20.5, description: 'Cloudy' },
+    { id: '294021', cityName: 'Moscow', cTemperature: -7.8, description: 'Sunny' }
+]
