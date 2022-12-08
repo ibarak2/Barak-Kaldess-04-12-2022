@@ -1,0 +1,54 @@
+.search-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 25px;
+
+  & input {
+    font-size: 1em;
+    border: none;
+    padding: 0.3em;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.336);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .clear-btn {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    border-radius: 25px;
+    transform: translate(88px, -3px);
+
+    &:hover {
+      background-color: rgba(85, 85, 85, 0.151);
+    }
+  }
+
+  .autocomplete {
+    overflow-x: hidden;
+    height: 300px;
+    border: 2px solid black;
+    background-color: rgba(226, 226, 226, 0.918);
+    border-radius: 4px;
+    width: 256px;
+    position: absolute;
+    top: 50px;
+
+    .item {
+      padding: 1em 1em;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.493);
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:hover {
+        background-color: rgba(109, 109, 109, 0.493);
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.loading {
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  background-image: url("../../../../public/images/weather-wallpaper.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+  }
+}
