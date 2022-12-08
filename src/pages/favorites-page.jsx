@@ -6,7 +6,6 @@ import { toastService } from "../services/toast-service"
 import { weatherService } from "../services/weather-service"
 import { setCurrentWeather, setLoadingFalse, setLoadingTrue } from "../store/weather/weather.actions"
 
-
 export const FavoritesPage = () => {
 
     const { favoritesIds, isLoading } = useSelector(state => state.weatherModule)

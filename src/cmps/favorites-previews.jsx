@@ -1,5 +1,3 @@
-
-
 export const FavoritesPreviews = ({ myFavorites, onSelectFavorite }) => {
 
     return (
