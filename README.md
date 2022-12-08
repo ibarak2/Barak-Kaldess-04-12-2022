@@ -10,7 +10,7 @@ some of the techs used: React.js, React Redux, React Router, SCSS, React Toastif
 
 You can watch this live demo here: url-link
 
-~or~
+~or
 
 You can fork this repository, then:
 <br/>
