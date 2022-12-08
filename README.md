@@ -1,6 +1,6 @@
-# Getting Started
+# Welcome
 
-this weather app created as part of home task using React.js and AccuWeather APIs.
+This weather app created as part of a home task using React.js and AccuWeather APIs.
 
 ## Techs
 
@@ -13,5 +13,7 @@ You can watch this live demo here: url-link
 ~or~
 
 You can fork this repository, then:
+<br/>
 -npm install
+<br/>
 -npm start
