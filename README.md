@@ -1,6 +1,6 @@
 # Welcome
 
-This weather app created as part of a home task using React.js and AccuWeather APIs.
+This is a mobile responsive weather app created as part of a home task using React.js and AccuWeather APIs.
 
 ## Techs
 
