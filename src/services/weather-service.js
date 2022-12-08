@@ -6,9 +6,7 @@ export const weatherService = {
     getFavoritesForecasts
 }
 
-
 const API_KEY1 = "w3GuVkhCzakVDrn8cNdtOxhV7a66LTFP"
-
 
 const BASE_URL = "http://dataservice.accuweather.com/"
 const AUTOCOMPLETE_API_URL = `${BASE_URL}locations/v1/cities/autocomplete?apikey=${API_KEY1}&q=`
